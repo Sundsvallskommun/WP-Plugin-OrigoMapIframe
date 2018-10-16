@@ -13,9 +13,9 @@
  * @package           Sk_Origo_Map_Iframe
  *
  * @wordpress-plugin
- * Plugin Name:       SK Origo Map Iframe
+ * Plugin Name:       Sundsvalls kommun - Origo Map Iframe
  * Plugin URI:        Github
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Skapar en iframe med hjälp av en shortcode för att kunna infoga karta från Origo.
  * Version:           1.0.0
  * Author:            Daniel Pihlström
  * Author URI:        http://cybercom.com
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'PLUGIN_NAME_VERSION', '1.0.0' );
+define( 'SK_ORIGO_MAP_IFRAME_VERSION', '1.0.0' );
 
 /**
  * The code that runs during plugin activation.
@@ -63,6 +63,8 @@ register_deactivation_hook( __FILE__, 'deactivate_sk_origo_map_iframe' );
  * admin-specific hooks, and public-facing site hooks.
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-sk-origo-map-iframe.php';
+
+require plugin_dir_path( __FILE__ ) . 'templates/class-page-templater.php';
 
 /**
  * Begins execution of the plugin.
