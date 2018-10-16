@@ -1,0 +1,109 @@
+{
+    "key": "group_5bc48a7472d68",
+    "title": "Karta",
+    "fields": [
+        {
+            "key": "field_5bc58c9aeb834",
+            "label": "Sidmall för karta",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Denna sidmall har ingen vänsterkolumn och ska användas för att infoga en karta.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5bc48aa945c3a",
+            "label": "Ange länk till karta att infoga som iframe",
+            "name": "sk_origo_map_url",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5bc48ade45c3b",
+            "label": "Bredd",
+            "name": "sk_origo_map_width",
+            "type": "text",
+            "instructions": "Ange bredd i procent eller px, som t ex 80% eller 500px. \r\nSom standard är bredden 100%.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "100%",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5bc48b4745c3c",
+            "label": "Höjd",
+            "name": "sk_origo_map_height",
+            "type": "text",
+            "instructions": "Ange höjd i px, som t ex 600px, att använda procentenhet fungerar inte för höjd. Som standard är höjden satt till 600px.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "600px",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "page-origomap.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1539674004
+}
